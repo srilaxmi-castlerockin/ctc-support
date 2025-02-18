@@ -1,0 +1,301 @@
+/* Import Golos Text font */
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@200;400;600&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Golos Text', sans-serif;
+}
+
+/* Set background color */
+body {
+    background-color: white;
+}
+
+/* Header Styling */
+/* Responsive Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(245, 240, 255, 1), rgba(255, 255, 255, 0.8));
+    padding: 15px 30px;
+    position: relative;
+}
+
+/* Logo Section */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Help Center Text */
+.help-center {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Login Link */
+.login {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+/* "Go to Website" Button */
+.go-to-website {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.go-to-website:hover {
+    background: black;
+    color: white;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: white;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(to top, rgba(245, 240, 255, 1), rgba(255, 255, 255, 0.8));
+        
+    }
+
+    .nav a {
+        padding: 10px 20px;
+        display: block;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Show menu when active */
+    .nav.active {
+        display: flex;
+    }
+}
+
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.hero h1 {
+    font-family: 'Golos Text', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.highlight {
+    color: #A294F9;
+}
+
+.hero p {
+    font-family: 'Golos Text', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-input {
+    width: 50%;
+    padding: 12px 20px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* Popular Searches */
+.popular-searches {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.popular-searches p{
+    font-family: 'Golos Text', sans-serif;
+    font-size: small;
+     color: #6b7280;
+     padding-right: 5px;
+
+}
+
+.search-tag {
+    border: none;
+    background-color: #eee;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.search-tag:hover {
+    background-color: #ddd;
+}
+
+/* Feature Boxes */
+.feature-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.feature-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #e5e7eb;
+    padding: 15px;
+    border-radius: 12px;
+    width: 250px;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    background-color: #f8f8f8;
+}
+
+.feature-card i {
+    font-size: 40px;
+    color: inherit;
+}
+
+.feature-card div {
+    font-size: 14px;
+}
+
+.feature-card strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+/* FAQ Section */
+.faq-section {
+    margin-top: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.outer-box {
+    background-color: #F5EFFF;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 15px;
+    width: 80%;
+    justify-content: center;
+}
+
+.faq-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 32%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-box h3 {
+    margin-bottom: 10px;
+    font-family: 'Golos Text', sans-serif;
+}
+
+.faq-box hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin-bottom: 10px;
+}
+
+.faq-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.faq-box ul li {
+    margin: 5px 0;
+}
+
+.faq-box ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+    font-family: 'Golos Text', sans-serif;
+}
+
+.faq-box ul li a:hover, 
+.faq-box ul li a:focus {
+    background: #e0d4ff;
+    color: #4a00e0;
+}
+
+@media (max-width: 767px) {
+    .outer-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq-box {
+        width: 90%;
+    }
+}
